@@ -1,16 +1,16 @@
-window.onload=function(){
+﻿window.onload=function(){
     var btns = document.getElementsByTagName('input');    //两个控制按钮
     var timer = null;   //定时器的返回值
     var aDivSet = document.getElementsByClassName('swag'); //显示颜色的div
 
     btns[0].onclick = function (){//点击'开始闪',启动定时器,改变两个按钮的样式
-        changeColor(aDivSet);
-        if(timer==null) {
+       if(timer==null) {
             timer = setInterval(function(){
                 changeColor(aDivSet);
             },1000);
             btns[0].style.background='orange';
             btns[1].style.background='white';
+            changeColor(aDivSet);
         }      
     }
 
