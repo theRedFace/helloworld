@@ -19,6 +19,7 @@
         btns[1].style.background='orange';
         btns[0].style.background='white';
         initDiv(aDivSet);
+        timer = null;
     };
 
     btns[1].onmouseout = function(){
